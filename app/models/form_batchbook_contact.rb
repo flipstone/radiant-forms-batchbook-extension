@@ -8,8 +8,8 @@ class FormBatchbookContact
   end
 
   def create
-    ApiCaller.authenticate( "qre", "izSJrfcpFT" )
-    ApiCaller.add_contact("foo@bar.com", "fee", "bar")
+    ApiCaller.authenticate( config[:account], config[:token] )
+    ApiCaller.add_contact(@data[:contact][:email], "fee", "bar")
     
     {:hash => 'these details will be returned to the result page namespaced under batchbook_contact'}
     
