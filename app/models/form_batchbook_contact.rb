@@ -1,9 +1,9 @@
 class FormBatchbookContact
   attr_reader :config, :data
   
-  def initialize(form, page)
+  def initialize(form, page, config)
     @data   = page.data
-    @config = form.config[:batchbook]
+    @config = config
     # @body   = page.render_snippet(form)
   end
 
