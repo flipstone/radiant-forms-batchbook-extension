@@ -3,7 +3,7 @@
 
 class FormsBatchbookController < FormsExtensionController
   
-  # Called by FormController only if @form[:config] contains mail:
+  # Called by FormController only if @form[:config] contains batchbook:
   #----------------------------------------------------------------------------
   def create
     contact = BatchbookContact.new(@form, @page)
