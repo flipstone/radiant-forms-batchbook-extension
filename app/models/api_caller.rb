@@ -1,6 +1,6 @@
 class ApiCaller
   
-  def add_contact(options)
+  def self.add_contact(options)
     BatchBook.account = options[:account]
     BatchBook.token = options[:token]
 

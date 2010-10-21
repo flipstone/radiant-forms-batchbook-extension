@@ -16,12 +16,9 @@ class FormBatchbookContact
     
     @success = true
 
-    # return = {
-    #   :hash => 'these details will be returned to the result page namespaced under batchbook_contact'  
-    # }
-  rescue Exception => exception
-    @message = exception
-    @success = false
+    return {
+       :hash => 'these details will be returned to the result page namespaced under batchbook_contact'  
+    }
   end
   
   def subject
