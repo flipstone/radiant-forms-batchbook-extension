@@ -1,0 +1,10 @@
+=== 1.0.0 / 2009-01-02
+
+* 1 major enhancement
+
+  * Birthday!
+
+=== 1.0.2 / 2009-01-08
+
+* allow label/name param to request a specific location/supertag
+* search people/companies by passing :name or :email param to find(:all , :params {:name => 'will'})
