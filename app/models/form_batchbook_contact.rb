@@ -1,4 +1,5 @@
 class FormBatchbookContact
+  include Forms::Models::Extension
   attr_reader :config, :data
   
   def initialize(form, page, config)
@@ -14,6 +15,10 @@ class FormBatchbookContact
     )
     
     @success = true
+
+    # return = {
+    #   :hash => 'these details will be returned to the result page namespaced under batchbook_contact'  
+    # }
   rescue Exception => exception
     @message = exception
     @success = false
